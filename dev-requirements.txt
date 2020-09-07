@@ -5,9 +5,9 @@ pylint
 coverage
 flake8
 ipython
-isort; python_version >= '3.6'
+isort; python_version >= '3.8'
 pytest
 pytest-cov
 pytest-watch
 pre-commit
-black; python_version >= '3.6'
+black; python_version >= '3.8'
