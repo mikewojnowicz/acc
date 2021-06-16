@@ -12,7 +12,7 @@
 ##########################################
 ### Required Variables ###################
 ##########################################
-NAME := my_project
+NAME := acc
 VERSION := $(shell cat VERSION)
 SOURCES := $(shell find src -name '*.py')
 TARBALL := dist/$(NAME)-$(VERSION).tar.gz
