@@ -56,6 +56,10 @@ wanted a different result?
 Run `make test2-pdb` and navigate the debugger to determine the values of `x` and `y`.  
 4. How could you replicate this procedure in the previous item without using the Makefile?
 5. (Optional) Would you like to debug in Ipython rather than the python debugger `pdb`?   If so, then create a file called `~/.pdbrc`.  Add the single line `alias ipy from IPython import embed; user_ns=locals(); user_ns.update(globals()); embed(user_ns=user_ns)`.  Now rerun `make test2-pdb` and from the debugger, type `ipy`.  This will launch an ipython instance from the debugger where both local state and global state is maintained.  Confirm the former by typing `x` and `y` into ipython.  Confirm the latter by typing `add_numbers_incorrectly(x,y)`.
+6. See if you can diagnose the problem with `add_numbers_incorrectly` WITHOUT looking at the source code.  Run `make test1-pdb`,
+enter the debugger (perhaps interactively, using an embedded IPython instance), and play around with various values until you come to a hypothesis.
+7. Check the source code to see if your hypothesis is correct.
+8. Fix the source code, and rerun all tests using `make test`.   Did you fix the problem?
 
 # The rest of this file is outdated.  IGNORE IT!
 
