@@ -1,4 +1,3 @@
-import pytest  # noqa
 import random 
 
 from acc.arithmetic import  add_numbers_incorrectly
