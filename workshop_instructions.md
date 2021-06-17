@@ -1,36 +1,34 @@
 ## 0. Finish configuring Git.
 
-You should have already installed Git and configured it following the instructions [here](https://karink520.github.io/git-and-github-intro/install_git.html). We'll add one more configuration, to set the default branch name to `main`. Type the following into the terminal
+You should have already installed Git and configured it following the instructions [here](https://karink520.github.io/git-and-github-intro/install_git.html). 
 
-`git config --global init.defaultBranch main`
+## I. Clone the repo 
 
-## I. Start a new git repository (with Git `init`)
-
-1. Create a directory (folder) that will contain the files for your project.
-2. Navigate to that directory in the terminal.  (On Windows, you can use the Command Prompt or Git Bash).  To navigate use `cd` and `ls` if you are on Mac or Linux, `cd` and `dir` if you're on Windows.
-3. Make a new file called `ReadMe.txt` and add some text to it (just a sentence is fine), and save it.
-4. Type `git init` in the terminal; this will create the repository. You can see all the files in your folder (even the hidden ones), by using `ls -a`, you so you can use this to see the new folder called `.git` that was created when you ran `git init`. 
-6.  Type `git add ReadMe.txt` to tell Git to start tracking the `ReadMe.txt` file and to include this file in the next commit (i.e. to add it to the staging area).  If you want, try entering `git status` before you do this step and then again afterwards to see what changes.
-7. If you weren't able to configure your default branch name to be `main`, then the output of `git status` may tell you that you are on branch `master`. If that's the case, type `git checkout -b main` to move to a branch called `main`. Do this before you make your first commit in Step 8.
-8. Make a first commit by typing: 
-    `git commit -m "this is my first commit!`
-
-
-### Alternatives:
-**If you have an existing project and want to start using Git with it:**
-
-Navigate to the directory for the existing project with the terminal.  Enter `git init` to create a new repository in this directory. Use `git add` with every file that you want to track with Git, and then commit as in step 6 above.
-
-**If a collaborator just made you a (co)-owner of a repository on GitHub:**
-
-With your web browser, navigate to the repository on your GitHub account.  Click "Clone or Download".  You should see a url show up that looks something like `https://github.com/user_name/repo_name.git`.  In your terminal, navigate to the directory where you would like to put the project that you just got added to. Then type into the terminal `git clone https://github.com/user_name/repo_name.git`, replacing the example url here with the one you see on GitHub.  You should now have a repository locally on your computer, and it is linked to the remote repository.  The remote repository be default has the short name `origin`.
-
-**If you want to use someone else's existing repository on GitHub as a jumping off point:**
-
-See part VI on forking a repository.
+1. Navigate to a directory in the terminal which will contain your copy of the `acc` repo locally.  (On Windows, you can use the Command Prompt or Git Bash).  To navigate use `cd` and `ls` if you are on Mac or Linux, `cd` and `dir` if you're on Windows.
+2. Type `git clone https://github.com/mikewojnowicz/acc.git` in the terminal; this will clone the repository. You can see all the files in your folder (even the hidden ones), by using `ls -a`.
+3. Type `cd acc` to navigate into the directory you just cloned. 
 
 <div style="page-break-after: always;"></div>
 <br>
+
+## II. Virtual environment practice  
+1. Type `pip freeze` to see what python packages are installed globally. 
+2. Type `virtualenv env` in the terminal to create a virtual environment.
+3. Type `ls .`.  Do you see a new folder called `env`?
+4. Then type `source env/bin/activate` to activate the virtual environment. 
+5. Type `pip freeze` to see what packages are installed in the virtual environment.  What do you see?
+6. Install a simple python package to your virtualenvironment by typing `pip install pip install typing-extensions==3.10.0.0`.   
+7.  Type `pip freeze`.  What do you see?
+8. Type `deactivate` to deactivate the virtual environment
+9. Type `rm -rf env` to remove the virtual environment 
+10.  Type `make env` to construct a new virtual environemnt, into which we install all dependencies from all requirements files into the virtual environment. 
+11. Type `pip freeze`.  What do you see?
+12. What version of `pytest` do you have installed?  Type `pip freeze | grep pytest`.  
+
+<div style="page-break-after: always;"></div>
+<br>
+
+# The rest of this file is outdated.  IGNORE IT!
 
 ## II. Connect your new repository to GitHub
 
@@ -59,7 +57,7 @@ Since `fetch` just retrieves the changes and doesn't do anything with them, it's
 
    `git fetch origin` 
 
-   into the command line and read the message you get back.
+    into the command line and read the message you get back.
    Note that we don't expect to see any changes in the remote repository relative to our local copy, because we just connected up the two!  But if we were working with 
    a collaborator, say, and they had changed what was on GitHub, then `fetch` would get their changes.
 
