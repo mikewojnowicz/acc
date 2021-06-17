@@ -36,6 +36,8 @@ Virtual environments allow for isolated and reproducible dependencies.
 
 ## III. Playing with unit tests, the Makefile, and virtualenvs. 
 
+Unit tests usually live in `tests/unit/`, and test that functions in the source code behave as expected.  For an example, see [here](https://github.com/mikewojnowicz/acc/blob/master/tests/unit/test_arithmetic.py).
+
 1. Type `make test1` to run your first test.  What happened?  What assertion failed?
 2. Inspect the `Makefile` to determine what `make test1` is doing.   How do you run a specific test from a specific file?
 3. Can you replicate `make test1` by typing a command directly into the terminal?
