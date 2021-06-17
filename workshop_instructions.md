@@ -12,6 +12,9 @@ You should have already installed Git and configured it following the instructio
 <br>
 
 ## II. Virtual environment practice  
+
+Virtual environments allow for isolated and reproducible dependencies. 
+
 1. Type `pip freeze` to see what python packages are installed globally. 
 2. Type `virtualenv env` in the terminal to create a virtual environment.
 3. Type `ls .`.  Do you see a new folder called `env`?
@@ -22,11 +25,37 @@ You should have already installed Git and configured it following the instructio
 8. Type `deactivate` to deactivate the virtual environment
 9. Type `rm -rf env` to remove the virtual environment 
 10.  Type `make env` to construct a new virtual environemnt, into which we install all dependencies from all requirements files into the virtual environment. 
-11. Type `pip freeze`.  What do you see?
-12. What version of `pytest` do you have installed?  Type `pip freeze | grep pytest`.  
+11. Type `source env/bin/activate`
+12. Type `pip freeze`.  What do you see?
+13. What version of `pytest` do you have installed?  Type `pip freeze | grep pytest`.  
+14. For a better understanding of virtual environments, there is a short chapter on this in the excellent book by Brett Slatkin, [Effective Python](https://www.oreilly.com/library/view/effective-python-59/9780134034416/).
 
 <div style="page-break-after: always;"></div>
 <br>
+
+
+## III. Playing with unit tests, the Makefile, and virtualenvs. 
+
+1. Type `make test1` to run your first test.  What happened?  What assertion failed?
+2. Inspect the `Makefile` to determine what `make test1` is doing.   How do you run a specific test from a specific file?
+3. Can you replicate `make test1` by typing a command directly into the terminal?
+4. Type `deactivate` and then rerun that same command.  What happens?  Why?  Bonus: Can you explain this result
+by inspecting the recipe for `make env`?  
+5. Launch ipython and type `import acc`.  What happens?  Why?
+6. Type `source env/bin/activate`, launch ipython, and type `import acc`.  What happens? Why?
+7. Type `mkdir ~/tmp && cd ~/tmp` to create a temporary directory.  Then type `git clone https://github.com/mikewojnowicz/acc.git` to clone a fresh copy of `acc`.  Then launch and activate a virtual environment.   Then type `pip install -e .`  
+Then launch ipython and type `import acc`.  What happens?  Why?
+
+
+## IV. Playing with unit tests and the python debugger
+
+1. Type `make test2` to run a test.  What happened?  
+2. Type `make test2` again.  Do you get the same result?   Why? Is this desirable?  What could you change if you
+wanted a different result?
+3. We would like to know the values of `x` and `y` for `test_add_numbers_incorrectly_with_random_numbers`. 
+Run `make test2-pdb` and navigate the debugger to determine the values of `x` and `y`.  
+4. How could you replicate this procedure in the previous item without using the Makefile?
+5. (Optional) Would you like to debug in Ipython rather than the python debugger `pdb`?   If so, then create a file called `~/.pdbrc`.  Add the single line `alias ipy from IPython import embed; user_ns=locals(); user_ns.update(globals()); embed(user_ns=user_ns)`.  Now rerun `make test2-pdb` and from the debugger, type `ipy`.  This will launch an ipython instance from the debugger where both local state and global state is maintained.  Confirm the former by typing `x` and `y` into ipython.  Confirm the latter by typing `add_numbers_incorrectly(x,y)`.
 
 # The rest of this file is outdated.  IGNORE IT!
 
