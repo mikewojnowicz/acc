@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Description
 
-You can use the [editor on GitHub](https://github.com/mikewojnowicz/acc/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Software engineering tools are not pervasively used by academic researchers, but they can make life doing research much easier. This workshop describes how to incorporate automatic code checking into your workflow.  Automatic code checking can help identify serious code issues before they bite you, and can help automate otherwise tedious tasks. In particular, we will introduce students to unit testing, syntax checking, and code formatting. We will motivate why you would want to integrate these things into your workflow, and we will demonstrate by applying various Python packages (pytest, pylint, black, and sort) to specific examples. We will also discuss how to automate the application of these tools via Makefiles and pre-commit hooks. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Before the workshop
 
-### Markdown
+1. If you have never used the terminal / command prompt before, go through this [introductory tutorial](https://tutorial.djangogirls.org/en/intro_to_command_line/). The commands you will need to know for this course are ls (for Mac and Linux users), dir (for Windows users), and cd (for everyone). (15 min)
+2. Install Git, following these [instructions](https://karink520.github.io/git-and-github-intro/install_git.html). (10 min)
+3. Create an account on [GitHub](https://github.com). (5 min)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mikewojnowicz/acc/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Workshop materials
+[Workshop instructions](workshop_instructions.md)
