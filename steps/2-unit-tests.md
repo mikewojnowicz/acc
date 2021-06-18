@@ -67,6 +67,10 @@ If you get stuck, [take a peek at the solution](../solutions/test_catmath.py).
 
 For an introduction to unit tests, see the [slides](../slides/unit_testing.pdf).
 
+1. Navigate to the `test_scipy_stats.py` module and comment out the skip decorator.
+2. Run the test suite via `make test`.
+3. Adjust the test so that a greater range of `sample_size`s are tested.
+
 ## V. Some good practices
 
 ![good](../pics/good.png)
