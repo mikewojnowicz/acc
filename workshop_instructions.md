@@ -13,7 +13,9 @@ You should have already installed Git and configured it following the instructio
 
 ## II. Virtual environment practice  
 
-Virtual environments allow for isolated and reproducible dependencies. 
+`virtualenv` is a tool for constructing virtual environments for your Python project.
+Virtual environments allow for isolated and reproducible dependencies.
+
 
 1. Type `pip freeze` to see what python packages are installed globally. 
 2. Type `virtualenv env` in the terminal to create a virtual environment.

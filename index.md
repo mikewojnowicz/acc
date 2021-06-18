@@ -4,18 +4,20 @@ Software engineering tools are not pervasively used by academic researchers, but
 
 ## Goals
 
-
-<ul>
-  <li> Gain experience with using pytest </li>
-  <li> In tandem, gain experience with virtualenvs, Makefiles, and python debugging  </li>
-  <li> ...and more.  Stay tuned! </li>
-</ul>
+* Gain experience with writing and using unit tests (via pytest)
+* In tandem, gain experience with virtualenvs, Makefiles, and python debugging  
+* ...and more.  Stay tuned! 
 
 
 ## Before the workshop
 
-1. If you have never used the terminal / command prompt before, go through this [introductory tutorial](https://tutorial.djangogirls.org/en/intro_to_command_line/). The commands you will need to know for this course are ls (for Mac and Linux users), dir (for Windows users), and cd (for everyone). (15 min)
-2. Install Git, following these [instructions](https://karink520.github.io/git-and-github-intro/install_git.html). (10 min)
+1. If you have never used the terminal / command prompt before, go through this [introductory tutorial](https://tutorial.djangogirls.org/en/intro_to_command_line/). The tutorial covers commands such as `ls` (for Mac and Linux users), `dir` (for Windows users), and `cd` (for everyone). (0-15 min)
+2. Install Git, following these [instructions](https://karink520.github.io/git-and-github-intro/install_git.html). (0-10 min)
+3. Make sure you have Python (ideally 3.x).  (0-15 min)
+4. If you haven't already, install (0-5 min)
+
+    * [pip](https://pip.pypa.io/en/stable/installing/): This probably came with your Python installation, unless you’re on Linux and installed using your OS package manager.
+    * _virtualenv_:  Just do `pip install virtualenv`.  
 
 ## Workshop materials
 [Workshop instructions](workshop_instructions.md)
