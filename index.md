@@ -14,7 +14,7 @@ Software engineering tools are not pervasively used by academic researchers, but
 1. If you have never used the terminal / command prompt before, go through this [introductory tutorial](https://tutorial.djangogirls.org/en/intro_to_command_line/). The tutorial covers commands such as `ls` (for Mac and Linux users), `dir` (for Windows users), and `cd` (for everyone). (0-15 min)
 2. Install Git, following these [instructions](https://karink520.github.io/git-and-github-intro/install_git.html). (0-10 min)
 3. Make sure you have Python (ideally 3.x).  (0-15 min)
-4. If you haven't already, install (0-5 min)
+4. If you haven't already, install the following (0-5 min)
 
     * [pip](https://pip.pypa.io/en/stable/installing/): This probably came with your Python installation, unless you’re on Linux and installed using your OS package manager.
     * _virtualenv_:  Just do `pip install virtualenv`.  
