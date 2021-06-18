@@ -1,14 +1,12 @@
 import hypothesis.strategies as st
 import numpy as np
-import pytest
 import scipy.stats
 from hypothesis import given
 
 
-@pytest.mark.skip("Saving this for later")
 @given(
-    prob_success=st.floats(0.0, 1.0, exclude_min=False, exclude_max=False),
-    size=st.just(100),
+    prob_success=st.floats(0.0, 1.0),
+    size=st.integers(1, 1000),
 )
 def test__scipy_stats_bernoulli_rvs__empirical_probs_are_close_to_parameter(
     prob_success, size
