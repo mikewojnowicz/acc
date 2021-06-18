@@ -19,6 +19,8 @@
 
 \maketitle
 
+\section{Introduction}
+
 \begin{frame}{Some good practices}
 
 \begin{itemize}
@@ -31,7 +33,40 @@
 \end{itemize} 
 \end{frame}
 
-\section{The \texttt{hypothesis} package}
+
+
+\section{Conventional unit testing}
+\begin{frame}{Conventional unit testing}
+
+In \alert{conventional unit testing}, you write tests that assert that a \textit{particular} input is transformed into a \textit{particular} answer known to be correct.
+\vfill 
+We will practice writing tests like this using the \texttt{catinabox} module.
+\end{frame}
+
+
+\section{Property-based testing}
+
+
+\begin{frame}{Property-based testing}
+
+In \alert{property-based testing}, you write tests that assert that something should be true for every case, not just the ones you happen to think of.
+\vfill 
+\begin{itemize}
+\item \textbf{Conventional unit tests}: Assert that a \textit{particular} input is transformed to a \textit{particular} answer known to be correct.
+\item \textbf{Property-based tests}: Assert that some property holds for \textit{all} data matching some specification.
+\end{itemize}
+\vfill 
+\pause 
+\metroset{block=fill}
+\begin{block}{The \texttt{hypothesis} package}
+\texttt{hypothesis} is a Python library supporting property-based testing.
+\vfill
+It works by generating arbitrary data matching your specification and checking that your guarantee still holds in that case.
+\vfill
+It can find edge cases in your code you wouldn’t have thought to look for.
+\end{block}
+\end{frame}
+
 
 \begin{frame}
 \begin{center}
