@@ -16,6 +16,7 @@ py2-env
 #folders I don't want to track
 PDFs/
 plots/
+devel/
 
 #latex outputs
 *.aux
