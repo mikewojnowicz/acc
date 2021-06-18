@@ -42,27 +42,6 @@ test-pdb: env
 	# environments (or arguments or options for that command)
 	tox -- pytest -sv tests/unit/ --pdb 
 
-test1: env
-	# The '--' tells tox that everything afterwards is a command to run in its
-	# environments (or arguments or options for that command)
-	tox -- pytest -sv tests/unit/test_arithmetic.py::test_add_numbers_incorrectly
-
-test1-pdb: env
-	# The '--' tells tox that everything afterwards is a command to run in its
-	# environments (or arguments or options for that command)
-	tox -- pytest -sv tests/unit/test_arithmetic.py::test_add_numbers_incorrectly --pdb
-
-test2: env
-	# The '--' tells tox that everything afterwards is a command to run in its
-	# environments (or arguments or options for that command)
-	tox -- pytest -sv tests/unit/test_arithmetic.py::test_add_numbers_incorrectly_with_random_numbers
-
-test2-pdb: env
-	# The '--' tells tox that everything afterwards is a command to run in its
-	# environments (or arguments or options for that command)
-	tox -- pytest -sv tests/unit/test_arithmetic.py::test_add_numbers_incorrectly_with_random_numbers --pdb
-
-
 ##########################################
 ### REQUIRED TARGETS: DO NOT DELETE ######
 ##########################################
