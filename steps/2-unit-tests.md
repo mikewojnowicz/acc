@@ -6,11 +6,12 @@
 
 Unit tests usually live in `tests/unit/`, and test that functions in the source code behave as expected.  For an example, see [here](https://github.com/mikewojnowicz/acc/blob/master/tests/unit/test_arithmetic.py).
 
-1. Type `make test` to run your first test.  What happened?  What assertion failed?
+1. Type `make test` to run your first test.  What happened?  Which tests passed, and which tests failed?  Anything else
+of notice?
 2. Inspect the `Makefile` to determine what `make test` is doing.   
 3. Can you replicate `make test` by typing a command directly into the terminal? What is it? What does it do?
 4. You can also run a specific test from a specific module.
-Try `pytest -sv tests/unit/test_arithmetic.py::test__add_numbers_incorrectly`
+Try `pytest -sv tests/unit/test_arithmetic.py:: test__add_numbers_incorrectly__adding_something_plus_zero`
 5. Type `deactivate` and then rerun that same command.  What happens?  Why?   
 6. Launch ipython and type `import acc`.  What happens?  Why?
 7. Type `source env/bin/activate`, launch ipython, and type `import acc`.  What happens? Why?
@@ -22,7 +23,7 @@ Then launch ipython and type `import acc`.  What happens?  Why?
 
 ![debug](../pics/debug.png)
 
-1. Navigate to `tests/unit/test_arithmetic.py`, and move the `pytest.mark.skip` decorator from ` test__add_numbers_incorrectly__with_random_numbers` to  `test__add_numbers_incorrectly`.
+1. Navigate to `tests/unit/test_arithmetic.py`, and move the `pytest.mark.skip` decorator from ` test__add_numbers_incorrectly__with_random_numbers` to  the two test functions of the form `test__add_numbers_incorrectly__<postfix>`.
 2. Type `make test` to run the tests.  What happened?  
 3. Type `make test` again to run the tests again.  Do you get the same result?   Why? Is this desirable?  What could you change if you wanted a different result?
 5. We would like to know the values of `x` and `y` for `test_add_numbers_incorrectly_with_random_numbers`.  Run `make test-pdb` and navigate the debugger to determine the values of `x` and `y`.  
@@ -35,7 +36,7 @@ enter the debugger (perhaps interactively, using an embedded IPython instance), 
 
 ## III.  Writing your own tests 
 
-This section is stolen from [catinabox](https://github.com/keeppythonweird/catinabox)
+This section was stolen from [catinabox](https://github.com/keeppythonweird/catinabox) and then slightly modified.
 
 ![catinabox](../pics/catinabox.png)
 

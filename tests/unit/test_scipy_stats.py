@@ -10,7 +10,9 @@ from hypothesis import given
     prob_success=st.floats(0.0, 1.0, exclude_min=False, exclude_max=False),
     size=st.just(100),
 )
-def test_scipy_stats_bernoulli_rvs(prob_success, size):
+def test__scipy_stats_bernoulli_rvs__empirical_probs_are_close_to_parameter(
+    prob_success, size
+):
     successes = scipy.stats.bernoulli(prob_success).rvs(size)
     empirical_prob = np.mean(successes)
     standard_error = np.sqrt(prob_success * (1 - prob_success) / size)
