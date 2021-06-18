@@ -65,7 +65,7 @@ If you get stuck, [take a peek at the solution](../solutions/test_catmath.py).
 
 ![dog](../pics/dog.jpeg)
 
-For an introduction to unit tests, see the [slides](../slides/unit_testing.pdf).
+For an introduction to property-based testing, see the [slides](../slides/unit_testing.pdf).
 
 1. Navigate to the `test_scipy_stats.py` module and comment out the skip decorator.
 2. Run the test suite via `make test`.
