@@ -3,6 +3,8 @@
 
 ## I. Clone the repo 
 
+![clone](../pics/clone.jpeg)
+
 1. Navigate to a directory in the terminal which will contain your copy of the `acc` repo locally.  (On Windows, you can use the Command Prompt or Git Bash).  To navigate use `cd` and `ls` if you are on Mac or Linux, `cd` and `dir` if you're on Windows.
 2. Type `git clone https://github.com/mikewojnowicz/acc.git` in the terminal; this will clone the repository. You can see all the files in your folder (even the hidden ones), by using `ls -a`.
 3. Type `cd acc` to navigate into the directory you just cloned. 
@@ -11,6 +13,8 @@
 <br>
 
 ## II. Virtual environment practice  
+
+![virtualenv](../pics/virtualenv.jpeg)
 
 `virtualenv` is a tool for constructing virtual environments for your Python project.
 Virtual environments allow for isolated and reproducible dependencies.
