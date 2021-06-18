@@ -13,4 +13,7 @@ Software engineering tools are not pervasively used by academic researchers, but
     * _virtualenv_:  Just do `pip install virtualenv`.  
 
 ## Workshop materials
+
+Note: This section is currently under development.
+
 [Workshop instructions](workshop_instructions.md)
