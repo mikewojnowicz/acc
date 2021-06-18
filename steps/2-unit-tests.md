@@ -40,7 +40,7 @@ This section is stolen from [catinabox](https://github.com/keeppythonweird/catin
 ![catinabox](../pics/catinabox.png)
 
 
-If you get stuck, [take a peek at the solution](https://github.com/keeppythonweird/catinabox/blob/solutions/tests/test_catmath.py).
+If you get stuck, [take a peek at the solution](../solutions/test_catmath.py).
 
 1. We will be writing tests for [catmath.py](../src/acc/catmath.py).
    This module contains only one function ```cat_years_to_hooman_years```.
