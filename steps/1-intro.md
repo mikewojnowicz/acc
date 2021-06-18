@@ -29,7 +29,7 @@ Virtual environments allow for isolated and reproducible dependencies.
 7.  Type `pip freeze`.  What do you see?
 8. Type `deactivate` to deactivate the virtual environment
 9. Type `rm -rf env` to remove the virtual environment 
-10.  Type `make env` to construct a new virtual environemnt, into which we install all dependencies from all requirements files into the virtual environment.  (Note: we could have also done `pip install -e .` and then `pip install -r requirements.txt dev-requirements.txt`.)
+10.  Type `make env` to construct a new virtual environemnt, into which we install all dependencies from all requirements files into the virtual environment.  (Note: we could have also done `pip install -e .` and then `pip install -r requirements.txt` and then `pip install -r dev-requirements.txt`.)
 11. Type `source env/bin/activate`.  (Windows users: see troubleshooting.)
 12. Type `pip freeze`.  What do you see?
 13. What version of `pytest` do you have installed?  Type `pip freeze | grep pytest`.  
