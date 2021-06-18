@@ -6,6 +6,7 @@ coverage
 flake8
 ipython
 isort; python_version >= '3.8'
+hypothesis;
 pytest
 pytest-cov
 pytest-watch
