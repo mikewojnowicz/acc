@@ -21,18 +21,11 @@
 
 \section{Introduction}
 
-\begin{frame}{Some good practices}
+\begin{frame}{Unit tests}
+\alert{Unit tests} test that functions in the source code behave as expected. 
 
-\begin{itemize}
-\item Run tests before committing changes to source code. 
-\item Should be \alert{fast} (5-10 seconds to run \textit{all} tests).
-\item Each test function name should have a postfix describing what we're testing:
-	\begin{center}\url{test__function_name__what_property_we_are_testing}	
-	\end{center}
-\item One assertion per test.
-\end{itemize} 
+ For an example, see \href{https://github.com/mikewojnowicz/acc/blob/master/tests/unit/test_arithmetic.py}{\blue{here}}.
 \end{frame}
-
 
 
 \section{Conventional unit testing}
@@ -82,6 +75,18 @@ It can find edge cases in your code you wouldn’t have thought to look for.
 	
 \end{frame}
 
+\section{Good practices}
+\begin{frame}{Some good practices}
+
+\begin{itemize}
+\item Should be \alert{fast} (5-10 seconds to run \textit{all} tests).
+\item Run tests before committing changes to source code. 
+\item Each test function name should have a postfix describing what we're testing:
+	\begin{center}\url{test__function_name__what_property_we_are_testing}	
+	\end{center}
+\item One assertion per test.
+\end{itemize} 
+\end{frame}
 
 
 

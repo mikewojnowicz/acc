@@ -60,3 +60,15 @@ If you get stuck, [take a peek at the solution](../solutions/test_catmath.py).
    input and asserting based on the output.
 
 4. When you have filled in the body of these tests, run them with `make test`
+
+## IV.  Property-based testing
+
+![dog](../pics/dog.jpeg)
+
+For an introduction to unit tests, see the [slides](../slides/unit_testing.pdf).
+
+## V. Some good practices
+
+![good](../pics/good.png)
+
+For some good practices, see the [slides](../slides/unit_testing.pdf).
