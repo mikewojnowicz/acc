@@ -2,6 +2,8 @@
 
 Welcome to `acc`, a repo for exploring automatic code checking.
 
+The top-level webpage for this repo is [here](https://mikewojnowicz.github.io/acc/).  
+Use that a starting point for navigation.
 
 ## CLI usage
 
@@ -17,11 +19,7 @@ Run unit tests:
 make test
 ```
 
-Run integration tests:
-```
-make test-integration
-```
-
 ## Acknowledgements
 
-This template borrows heavily from work by Dan Lidral Porter and Tim Hopper, both of whom were gifted Data Science Engineers at Cylance, Inc.  Any mistakes or oddities are almost certainly my own.
+This python package structure borrows heavily from work by Dan Lidral-Porter and Tim Hopper,
+two gifted Data Science Engineers.   Any mistakes or oddities are almost certainly my own.
