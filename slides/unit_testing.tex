@@ -27,6 +27,16 @@
  For an example, see \href{https://github.com/mikewojnowicz/acc/blob/master/tests/unit/test_arithmetic.py}{\blue{here}}.
 \end{frame}
 
+\begin{frame}{Why write unit tests?}
+\begin{itemize}
+\item (Prototypical motivation) Ensure that if you change your source code later on, you don’t accidentally convert a working function into a buggy one.  %This basically takes the work most of us do anyways to test a function, and allows us to rerun automatic checks before committing. 
+\item Illustrate usage of functions to other people (or to “future you”)
+\item The requirement to test code often leads to better factored source code {\tiny (and sometimes even better factored underlying mathematical arguments in papers!)}  %Tell them the ELBO story — took ~ 1 week of my time, a couple hours of a PI’s time, and most of a meeting with 4 ppl with Ph.D.’s to find a couple of silly errors in the  ELBO.   Unit tests can prevent this — getting stuck on some tedious detail, lost in a sea of complexity!   
+\item Can help check and reinforce your own understanding when learning something new. {\tiny [Is the function behaving like you expect?  If not, is there perhaps some gap in your understanding behind it — and so your mind (and therefore the code) needs to be tweaked?}    %Finally property-based unit tests can help check and reinforce your own understanding when you’re learning something new. Is the function behaving like you expect?  If not, is there perhaps some gap in your understanding behind it — and so your mind (and therefore the code) needs to be tweaked?  (Catchy motto: unit testing your mind).    Example: inverse wishart sampler… better understanding of the prior sum of squares parameter. 
+\end{itemize}
+	
+\end{frame}
+
 
 \section{Conventional unit testing}
 \begin{frame}{Conventional unit testing}
