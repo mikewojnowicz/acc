@@ -12,3 +12,6 @@ pytest-cov
 pytest-watch
 pre-commit
 black; python_version >= '3.8'
+
+numpy
+scipy
