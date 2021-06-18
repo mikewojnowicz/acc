@@ -7,7 +7,7 @@ Before doing the tutorial, you should have already completed the "Before the Wor
 
 1. [Introductory Material](./steps/1-intro.md)
 2. [Unit tests](./steps/2-unit-tests.md)
-
+3. [Syntax and formatting](./steps/3-syntax-and-formatting.md)
 
 # Troubleshooting
 
