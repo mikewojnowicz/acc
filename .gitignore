@@ -16,15 +16,17 @@ py2-env
 #folders I don't want to track
 PDFs/
 plots/
-slides/
 
 #latex outputs
-reports/*.aux
-reports/*.bbl
-reports/*.blg
-reports/*.log
-reports/*.out
-reports/*.toc
-
+*.aux
+*.bbl
+*.blg
+*.gz
+*.log
+*.mov
+*.out
+*.snm
+*.toc
+*.texpadtmp*
 
 
