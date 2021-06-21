@@ -12,6 +12,7 @@ Please follow these steps, in order of priority:
 
     * [pip](https://pip.pypa.io/en/stable/installing/): This probably came with your Python installation, unless you’re on Linux and installed using your OS package manager.
     * _virtualenv_:  Just do `pip install virtualenv`.  
+    * _tox_: Just do `pip install tox`. 
 3. If you have never used the terminal / command prompt before, go through this [introductory tutorial](https://tutorial.djangogirls.org/en/intro_to_command_line/). The tutorial covers commands such as `ls` (for Mac and Linux users), `dir` (for Windows users), and `cd` (for everyone). (0-15 min)
 4. Install Git, following these [instructions](https://karink520.github.io/git-and-github-intro/install_git.html). (0-10 min)
 
