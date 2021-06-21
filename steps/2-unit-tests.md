@@ -2,7 +2,7 @@
 
 ## I. Exploring unit tests, the Makefile, and virtualenvs
 
-![explore](../pics/explore.jpeg)
+<img src="../pics/explore.jpeg" alt="explore" width="400"/>
 
 Unit tests usually live in `tests/unit/`, and test that functions in the source code behave as expected.  For an example, see [here](https://github.com/mikewojnowicz/acc/blob/master/tests/unit/test_arithmetic.py).
 
@@ -20,8 +20,7 @@ Then launch ipython and type `import acc`.  What happens?  Why?
 
 ## II. Exploring unit tests and the python debugger
 
-
-![debug](../pics/debug.png)
+<img src="../pics/debug.png" alt="debug" width="400"/>
 
 1. Navigate to `tests/unit/test_arithmetic.py`, and move the `pytest.mark.skip` decorator from ` test__add_numbers_incorrectly__with_random_numbers` to  the two test functions of the form `test__add_numbers_incorrectly__<postfix>`.
 2. Type `make test` to run the tests.  What happened?  
@@ -38,8 +37,7 @@ enter the debugger (perhaps interactively, using an embedded IPython instance), 
 
 This section was stolen from [catinabox](https://github.com/keeppythonweird/catinabox) and then slightly modified.
 
-![catinabox](../pics/catinabox.png)
-
+<img src="../pics/catinabox.png" alt="catinabox" width="400"/>
 
 If you get stuck, [take a peek at the solution](../solutions/test_catmath.py).
 
@@ -63,7 +61,7 @@ If you get stuck, [take a peek at the solution](../solutions/test_catmath.py).
 
 ## IV.  Property-based testing
 
-![dog](../pics/dog.jpeg)
+<img src="../pics/dog.jpeg" alt="dog" width="400"/>
 
 For an introduction to property-based testing, see the [slides](../slides/unit_testing.pdf).
 
@@ -73,6 +71,6 @@ For an introduction to property-based testing, see the [slides](../slides/unit_t
 
 ## V. Some good practices
 
-![good](../pics/good.png)
+<img src="../pics/good.png" alt="good" width="400"/>
 
 For some good practices, see the [slides](../slides/unit_testing.pdf).
